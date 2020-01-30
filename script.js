@@ -49,7 +49,7 @@ console.log(geometrie(7,2,5)[1], geometrie(7,2,5)[0]);
 console.log("The The area of the box is:" + area + ".");
 console.log("The The volume of the box is:" +volume+ ".");
 
-
+// Kommentare sind super wichtig
 
 function firstLetter(string){
     var y = string.charAt(0).toUpperCase(); // charAt nimmt den ersten Buchstaben toUpperCase macht es groß
@@ -62,7 +62,10 @@ firstLetter("i am a web developer");
   
 
     
-
+array=["Atilla", "ist","verrück"]
+for (i = 0; i < array.length; i++){
+    console.log(array[i]);
+}
 
 
 
