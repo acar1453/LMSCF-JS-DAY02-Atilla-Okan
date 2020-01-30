@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #eat{
+       
+       display: flex;
+       justify-content: center;
+       
+        
+    }
+
+    #cart{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <!--<button id="container">Hallo</button>
+    <div id="example"></div>
+    <div class="Okan"></div>-->
+    <div id="eat">
+    <button id="eat">Eat Me</button>
+    </div>
+
+    <div id="cart"></div>
+    
+        
+    <script>
+        /*function Hallo(){
+        document.getElementById("example").innerHTML="GoodBye"
+        }
+
+        var container = document.getElementById("container")
+
+        container.addEventListener("click", function(){
+            console.log("Hello von der Konsole")
+        })
+
+        var goodbye = document.getElementById("example")
+        goodbye.innerHTML = "Hallooo"
+        goodbye.style.color = "blue"
+        goodbye.style.background = "grey"
+        goodbye.style.fontSize = "30px"
+
+
+        var first = document.getElementsByClassName("Okan")[0]
+        first.innerHTML = "Hallo ich bin Okan"
+        first.style.color = "orange"
+        first.style.background = "lightblue"
+        first.style.margin = "40px"
+        first.style.fontSize = "50px"
+        first.style.textAlign = "center"*/
+
+       var text = document.getElementById('eat');
+       text.addEventListener('click', cost, false)
+
+       function cost(){
+        fruit = ['apple', 'banane', 'strawberry', 'raspberry', 'mango'];
+        for(i = 0; i < fruit.length; i++){
+
+            document.getElementById('cart').innerHTML+="<div class ='all'>" + fruit[i] + "</div>";     var all = document.getElementsByClassName('all')[i];
+
+            var all = document.getElementsByClassName("all")[i];
+            all.style.color="white";
+            all.style.backgroundColor = "black";
+            all.style.width= "100px"
+            all.style.height="100px"
+            all.style.margin="10px"
+            all.style.display="flex"
+            all.style.justifyContent="center"
+            all.style.alignItems="center"
+            all.style.textAlign="center"
+            
+         }
+       }
+        
+
+
+    </script>
+</body>
+</html>
